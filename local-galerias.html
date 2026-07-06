@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Local Comercial en Galerías | Avila Real Estate</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+  </head>
+  <body class="detail-body">
+    <section class="detail-header">
+      <a class="back-link" href="index.html" style="font-size:2em">← Volver a la pagina principal</a>
+      <h1>Local Comercial en Galerías</h1>
+    </section>
+
+    <main class="property-page reveal">
+      <section class="property-hero reveal">
+        <div class="swiper container-listing">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide card-item">
+              <div class="card-image-wrapper">
+                <img src="images/local-alquiler-oventa-galerias.PNG" alt="Local Comercial en Galerías" class="property-main-image" />
+              </div>
+            </div>
+            <div class="swiper-slide card-item">
+              <div class="card-image-wrapper">
+                <img src="images/local-comercial-1.png" alt="Local Comercial en Galerías" class="property-main-image" />
+              </div>
+            </div>
+            <div class="swiper-slide card-item">
+              <div class="card-image-wrapper">
+                <img src="images/local-comercial-2.png" alt="Local Comercial en Galerías" class="property-main-image" />
+              </div>
+            </div>
+            <div class="swiper-slide card-item">
+              <div class="card-image-wrapper">
+                <img src="images/local-comercial-3.png" alt="Local Comercial en Galerías" class="property-main-image" />
+              </div>
+            </div>
+            <div class="swiper-slide card-item">
+              <div class="card-image-wrapper">
+                <img src="images/local-comercial-4.png" alt="Local Comercial en Galerías" class="property-main-image" />
+              </div>
+            </div>
+            <div class="swiper-slide card-item">
+              <div class="card-image-wrapper">
+                <img src="images/local-comercial-5.png" alt="Local Comercial en Galerías" class="property-main-image" />
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+
+    
+
+        <div class="property-summary reveal">
+          <span class="badge">Alquiler o venta</span>
+          <p class="property-info">Local comercial en planta baja del Centro Comercial Galerías Edsam, con excelente visibilidad y acceso directo para clientes.</p>
+          <div class="property-meta">
+            <p><strong>Ubicación:</strong> Centro Comercial Galerías Edsam</p>
+            <p><strong>Tipo:</strong> Local comercial</p>
+            <p><strong>Disponibilidad:</strong> Alquiler o venta</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="property-details reveal">
+        <h2>Detalles de la propiedad</h2>
+        <p>El local se encuentra en una posición privilegiada dentro del centro comercial, permitiendo flujo constante de visitantes. Es perfecto para tiendas, oficinas de servicios o negocios que necesiten exposición.</p>
+        <ul class="property-features">
+          <li>Planta baja con entrada directa</li>
+          <li>Gran exposición comercial</li>
+          <li>Zona de alto tránsito peatonal</li>
+          <li>Opción de alquiler o compra</li>
+          <li>Buen acceso a transporte público</li>
+        </ul>
+      </section>
+
+      <section class="property-contact reveal">
+        <h2>Contacto</h2>
+        <p>Solicita información sobre precios, condiciones y visitas para conocer este local comercial.</p>
+        <a class="btn" href="mailto:santiago.velasco.pereira@gmail.com">Contactar por correo</a>
+      </section>
+    </main>
+
+    <div class="image-modal" id="imageModal">
+      <img src="" alt="Zoomed image" id="modalImage" />
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="script/script.js"></script>
+    <script>
+      const modal = document.getElementById('imageModal');
+      const modalImage = document.getElementById('modalImage');
+
+      document.querySelectorAll('.property-main-image').forEach((img) => {
+        img.addEventListener('click', () => {
+          modalImage.src = img.src;
+          modal.classList.add('active');
+        });
+      });
+
+      modal.addEventListener('click', () => {
+        modal.classList.remove('active');
+        modalImage.src = '';
+      });
+    </script>
+  </body>
+</html>

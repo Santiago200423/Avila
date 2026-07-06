@@ -1,127 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Avila Real Estate</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avila Real Estate</title>
+    <!--Link for google fonts-icons-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_forward_ios" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!--Swippper-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+  </head>
 
-<body>
-  <header class="hero">
-    <div class="overlay">
-  <h1 class="title">
-    <span>Avila Real Estate</span>
-  </h1>
-  <nav>
-    <a class="navigation" href="#about">
-      <span">Sobre Nosotros</span>
-    </a>
-    <a class="navigation" href="#listings">
-      <span>Propiedades</span>
-    </a>
-    <a class="navigation" href="#contact">
-      <span>Contactanos</span>
-    </a>
-  </nav>
-  </div>
-</header>
-
-
-
-
-
- <section id="about" class="container">
-  <div class="eyebrow">- Sobre Nosotros</div>
-
-  <div class="about-content">
-
-    <!-- LEFT: slider -->
-    <div class="slider-wrapper">
-      <div class="slider">
-        <img id="slide1" src="images/persona1.jpeg" alt="Person 1"/>
-        <img id="slide2" src="images/persona2.png" alt="Person 2"/>
-        <img id="slide3" src="images/persona3.png" alt="Person 3"/>
+  <body>
+    <header class="hero">
+      <div class="overlay">
+        <h1 class="title">
+          <span>Avila Real Estate</span>
+        </h1>
+        <nav>
+          <a class="navigation" href="#about">
+            <span>Sobre Nosotros</span>
+          </a>
+          <a class="navigation" href="#listings">
+            <span>Propiedades</span>
+          </a>
+          <a class="navigation" href="#contact">
+            <span>Contactanos</span>
+          </a>
+        </nav>
       </div>
-      <div class="slider-nav">
-        <a href="#slide1"></a>
-        <a href="#slide2"></a>
-        <a href="#slide3"></a>
+    </header>
+
+    <section id="about" class="container reveal">
+      <div class="eyebrow" style="font-style: italic;">-Sobre Nosotros</div>
+
+      <div class="about-content">
+        
+        <div class="slider-wrapper reveal">
+          <div class="slider">
+            <img id="slide1" src="images/persona1.jpeg" alt="Person 1" />
+            <img id="slide2" src="images/persona2.png" alt="Person 2" />
+           
+          </div>
+          <div class="slider-nav">
+            <a href="#slide1"></a>
+            <a href="#slide2"></a>
+            
+          </div>
+        </div>
+
+        
+        <div class="about-text reveal">
+          <h2 class="section-title" style="font-style: italic;">
+            Nuestra misión proporcionar a nuestros clientes un servicio
+            <em>profesional</em>, orientado hacia la asesoría competente durante
+            el proceso inmobiliario.
+          </h2>
+          <p></p>
+          <p></p>
+          <p style="font-style: italic; font-size: 25px;">
+            Sus fundadoras son profesionales universitarios de ramas diversas
+            que decidieron iniciar esta carrera de bienes raíces, en la cual nos
+            hemos convertido en profesionales del área e instruido a muchos en
+            esta hermosa carrera.
+          </p>
+          <p style="font-style: italic; font-size: 25px;">
+            Actualmente funcionamos en la California Norte ofreciendo un
+            servicio de calidad a nuestros clientes, y pronto informaremos a
+            nuestra clientela del nuevo local para atenderlos como se merecen.
+            La estructura de nuestra Inmobiliaria está conformada por la
+            </p><p style="font-style: italic; font-size: 25px;">
+            Gerencia de Ventas, Asesoría Legal, Asistente y Asesor Asociado.
+          </p>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p style="font-style: italic; font-size: 20px;"> •La estructura de nuestra Inmobiliaria está conformada por la Gerencia de Ventas, Asesoría Legal,  Asistente y Asesor Asociado. </p>
+          <p></p>
+          <p style="font-style: italic; font-size: 20px;"> •Gerente 	MILAGROS J. PEREIRA D. Experiencia desde el año 2002 en varias franquicias Century 21</p>
+          <p></p>
+          <p style="font-style: italic; font-size: 20px;"> •Asesor Legal	TANIA LOZADA RODRIGUEZ Experiencia como Abogado  y Asesor Inmobiliario desde el año 2003</p>
+          <p></p>
+          <p style="font-style: italic; font-size: 20px;"> •Asistente				ISBET CAMPOS G. Desde el año 2015</p>
+          <p></p>
+          <p style="font-style: italic; font-size: 20px;"> •Asesor Asociado	VALENTINA MOROS RIVAS Asesor y socia desde el 2025</p>
+
+        </div>
       </div>
-    </div>
+    </section>
 
-    <!-- RIGHT: text -->
-    <div class="about-text">
-      <h2 class="section-title"> Nuestra misión es proporcionar a nuestros clientes un servicio <em>profesional</em>, orientado hacia la asesoría competente durante el proceso inmobiliario.</h2>
-      
-      
-      <p>Sus fundadoras son profesionales universitarios de ramas diversas que decidieron iniciar esta carrera de bienes raíces, en la cual nos hemos convertido en profesionales del área e instruido a muchos en esta hermosa carrera.</p>
-      Actualmente funcionamos en la California Norte ofreciendo un servicio de calidad a nuestros clientes, y pronto informaremos a nuestra clientela del nuevo local para atenderlos como se merecen.
-      La estructura de nuestra Inmobiliaria está conformada por la Gerencia de Ventas, Asesoría Legal, Asistente y Asesor Asociado.</p>
-    </div>
 
+    <section class="marquee reveal">
+      <div class="marquee-track">
+        <span>Renta o Compra</span>
+        <span class="dot">•</span>
+        <span>Oficinas</span>
+        <span class="dot">•</span>
+        <span>Cubiculos</span>
+        <span class="dot">•</span>
+        <span>Avila Real Estate</span>
+        <span class="dot">•</span>
+        <span>Apartamentos</span>
+        <span class="dot">•</span>
+        <span>Casas</span>
+        <span class="dot">•</span>
+        <span>Propiedades Exclusivas</span>
+        <span class="dot">•</span>
+
+        <span>Renta o Compra</span>
+        <span class="dot">•</span>
+        <span>Oficinas</span>
+        <span class="dot">•</span>
+        <span>Cubiculos</span>
+        <span class="dot">•</span>
+        <span>Casas</span>
+        <span class="dot">•</span>
+        <span>Apartamentos</span>
+        <span class="dot">•</span>
+        <span>Casas</span>
+        <span class="dot">•</span>
+        <span>Propiedades Exclusivas</span>
+        <span class="dot">•</span>
+      </div>
+    </section>
+    <section id="listings" class="reveal">
+  <div class="eyebrow listado" style="font-style: italic;">-Listados</div>
+
+  <div class="swiper container-listing">
+    <ul class="swiper-wrapper card-list">
+
+      <li class="swiper-slide card-item">
+        <a href="cubiculos-boleita-sur.html" class="card-link">
+          <div class="card-image-wrapper">
+            <img src="images/Cubiculos-alquiler-boleita-sur.png" alt="Card-image" class="card-image" />
+          </div>
+          <p class="badge">CUBICULOS EN ALQUILER BOLEITA SUR</p>
+          <h2 class="card-title">Cubículos para alquilar desde 7 m2, solo para actividades administrativas.</h2>
+          <button class="card-button material-symbols-outlined">arrow_forward_ios</button>
+        </a>
+      </li>
+
+      <li class="swiper-slide card-item">
+        <a href="apartamento-venta-los-ruices.html" class="card-link">
+          <div class="card-image-wrapper">
+            <img src="images/apartamento-venta-losruices.png" alt="Card-image" class="card-image" />
+          </div>
+          <p class="badge">APARTAMENTO EN VENTA LOS RUICES</p>
+          <h2 class="card-title">Apartamento ubicado en piso intermedio, en buen estado de conservación.</h2>
+          <button class="card-button material-symbols-outlined">arrow_forward_ios</button>
+        </a>
+      </li>
+
+      <li class="swiper-slide card-item">
+        <a href="local-galerias.html" class="card-link">
+          <div class="card-image-wrapper">
+            <img src="images/local-alquiler-oventa-galerias.PNG" alt="Card-image" class="card-image" />
+          </div>
+          <p class="badge">LOCAL COMERCIAL EN ALQUILER O VENTA</p>
+          <h2 class="card-title">Local comercial en la planta baja del Centro Comercial Galerías Edsam.</h2>
+          <button class="card-button material-symbols-outlined">arrow_forward_ios</button>
+        </a>
+      </li>
+
+      <li class="swiper-slide card-item">
+        <a href="oficina-santa-teresa.html" class="card-link">
+          <div class="card-image-wrapper">
+            <img src="images/oficina-venta-parroquia-santa-teresa.PNG" alt="Card-image" class="card-image" />
+          </div>
+          <p class="badge">OFICINA EN VENTA PARROQUIA SANTA TERESA</p>
+          <h2 class="card-title">Oficina de 26m² en edificio de 40 años con acabados de primera.</h2>
+          <button class="card-button material-symbols-outlined">arrow_forward_ios</button>
+        </a>
+      </li>
+
+      <li class="swiper-slide card-item">
+        <a href="local-guarenas.html" class="card-link">
+          <div class="card-image-wrapper">
+            <img src="images/local-venta-guarenas.PNG" alt="Card-image" class="card-image" />
+          </div>
+          <p class="badge">LOCAL EN VENTA EN GUARENAS</p>
+          <h2 class="card-title">Inmueble con frente a la Calle Comercio y lateral a la Calle Arismendi.</h2>
+          <button class="card-button material-symbols-outlined">arrow_forward_ios</button>
+        </a>
+      </li>
+
+      <li class="swiper-slide card-item">
+        <a href="casa-oripoto.html" class="card-link">
+          <div class="card-image-wrapper">
+            <img src="images/casa-venta-oripoto.PNG" alt="Card-image" class="card-image" />
+          </div>
+          <p class="badge">CASA EN VENTA EN ORIPOTO</p>
+          <h2 class="card-title">Casa de cuatro niveles con fachada en tablillas de arcilla.</h2>
+          <button class="card-button material-symbols-outlined">arrow_forward_ios</button>
+        </a>
+      </li>
+
+      <li class="swiper-slide card-item">
+        <a href="casa-boleita-sur.html" class="card-link">
+          <div class="card-image-wrapper">
+            <img src="images/casa-venta-boleita-sur.PNG" alt="Card-image" class="card-image" />
+          </div>
+          <p class="badge">CASA EN VENTA BOLEITA SUR</p>
+          <h2 class="card-title">Casa en Boleíta Sur. 265m² construcción / 122m² terreno.</h2>
+          <button class="card-button material-symbols-outlined">arrow_forward_ios</button>
+        </a>
+      </li>
+
+    </ul>
+
+    <!-- Swiper nav & pagination — must be INSIDE .swiper -->
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
   </div>
 </section>
+    <section id="contact" class="contact reveal">
+      <form id="contact-form" action="https://formsubmit.co/ajax/avila.realestate.ccs@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="Nuevo mensaje desde Avila Real State" />
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_template" value="table" />
+        <div class="card">
+          <div class="card-header">
+            <h1>Preguntas?</h1>
+            <p>Contactanos!</p>
+          </div>
 
-  <section id="listings">
-    <h2>Propiedades</h2>
-    <p>Coming soon.</p>
-  </section>
+          <div class="fields">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="first-name">Nombre</label>
+                <input type="text" id="first-name" name="first-name" placeholder="Jane" />
+              </div>
+              <div class="form-group">
+                <label for="last-name">Apellido</label>
+                <input type="text" id="last-name" name="last-name" placeholder="Doe" />
+              </div>
+            </div>
 
-  <section id="contact"class="contact">
-  <form action="https://formsubmit.co/santiago.velasco.pereira@gmail.com" method="POST">
-    
- 
-  <div class="card">
-    <div class="card-header">
-      <h1>Preguntas?</h1>
-      <p>Contactanos!</p>
-    </div>
- 
-    <div class="fields">
-      <div class="form-row">
-        <div class="form-group">
-          <label for="first-name">Nombre</label>
-          <input type="text" id="first-name" name="first-name" placeholder="Jane" />
+            <div class="form-group">
+              <label for="email">Correo Electrónico</label>
+              <input type="email" id="email" name="email" placeholder="jane@example.com" />
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Asunto</label>
+              <input type="text" id="subject" name="subject" placeholder="¿De qué se trata?" />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Mensaje</label>
+              <textarea id="message" name="message" placeholder="Escribe tu mensaje aquí..."></textarea>
+            </div>
+
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+            <button class="btn" id="send-btn" type="submit">Enviar</button>
+          </div>
         </div>
-        <div class="form-group">
-          <label for="last-name">Apellido</label>
-          <input type="text" id="last-name" name="last-name" placeholder="Doe" />
-        </div>
-      </div>
- 
-      <div class="form-group">
-        <label for="email">Correo Electrónico</label>
-        <input type="email" id="email" name="email" placeholder="jane@example.com" />
-      </div>
- 
-      <div class="form-group">
-        <label for="subject">Asunto</label>
-        <input type="text" id="subject" name="subject" placeholder="¿De qué se trata?" />
-      </div>
- 
-      <div class="form-group">
-        <label for="message">Mensaje</label>
-        <textarea id="message" name="message" placeholder="Escribe tu mensaje aquí..."></textarea>
-      </div>
- 
-      <button class="btn" id="send-btn">Enviar</button>
-    </div>
-  </div>
-  </form>
- 
-  <script>
-    document.getElementById('send-btn').addEventListener('click', function () {
-      this.textContent = 'Message sent ✓';
-      this.classList.add('sent');
-      this.disabled = true;
-    });
-  </script>
- 
+      </form>
+    </section>
 
-
-  </section>
-
-  <script src="script/script.js"></script>
-
-</html>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+<script src="script/script.js"></script>
+  </body>

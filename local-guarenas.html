@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Local en Venta Guarenas | Avila Real Estate</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+  </head>
+  <body class="detail-body">
+    <section class="detail-header">
+      <a class="back-link" href="index.html">← Volver a listados</a>
+      <h1>Local en Venta Guarenas</h1>
+    </section>
+
+    <main class="property-page reveal">
+      <section class="property-hero reveal">
+        <div class="swiper container-listing">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide card-item">
+              <div class="card-image-wrapper">
+                <img src="images/local-venta-guarenas.PNG" alt="Local en Venta Guarenas" class="property-main-image" />
+              </div>
+            </div>
+            <div class="swiper-slide card-item">
+              <div class="card-image-wrapper">
+                <img src="images/local-gaurenas-1.png" alt="Local Comercial en Galerías" class="property-main-image" />
+              </div>
+            </div>
+
+            <div class="swiper-slide card-item">
+              <div class="card-image-wrapper">
+                <img src="images/local-gaurenas-2.png" alt="Local Comercial en Galerías" class="property-main-image" />
+              </div>
+            </div>
+
+            <div class="swiper-slide card-item">
+              <div class="card-image-wrapper">
+                <img src="images/local-gaurenas-3.png" alt="Local Comercial en Galerías" class="property-main-image" />
+              </div>
+            </div>
+
+            <div class="swiper-slide card-item">
+              <div class="card-image-wrapper">
+                <img src="images/local-gaurenas-4.png" alt="Local Comercial en Galerías" class="property-main-image" />
+              </div>
+            </div>
+
+            <div class="swiper-slide card-item">
+              <div class="card-image-wrapper">
+                <img src="images/local-gaurenas-5.png" alt="Local Comercial en Galerías" class="property-main-image" />
+              </div>
+            </div>
+
+          </div>
+
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+          <div class="slider-footer">
+            <span class="slider-badge">Venta comercial</span>
+          </div>
+        </div>
+
+        <div class="property-summary">
+          <span class="badge">Venta comercial</span>
+          <p class="property-info">Inmueble con frente a la Calle Comercio y lateral a la Calle Arismendi, ideal para negocio con alto flujo vehicular y peatonal.</p>
+          <div class="property-meta">
+            <p><strong>Ubicación:</strong> Guarenas</p>
+            <p><strong>Frente:</strong> Calle Comercio</p>
+            <p><strong>Lateral:</strong> Calle Arismendi</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="property-details reveal">
+        <h2>Detalles de la propiedad</h2>
+        <p>Este local cuenta con una ubicación estratégica que favorece todo tipo de comercio. Es una excelente opción para quienes buscan visibilidad y fácil acceso tanto para clientes como proveedores.</p>
+        <ul class="property-features">
+          <li>Frente comercial sobre calle principal</li>
+          <li>Esquina con doble acceso</li>
+          <li>Excelente exposición y flujo de personas</li>
+          <li>Amplio potencial para comercio o servicios</li>
+          <li>Zona consolidada de negocios</li>
+        </ul>
+      </section>
+
+      <section class="property-contact reveal">
+        <h2>Contacto</h2>
+        <p>Envía tu consulta para recibir más información sobre esta propiedad comercial.</p>
+        <a class="btn" href="mailto:santiago.velasco.pereira@gmail.com">Contactar por correo</a>
+      </section>
+    </main>
+     <div class="image-modal" id="imageModal">
+      <img src="" alt="Zoomed image" id="modalImage" />
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="script/script.js"></script>
+
+    <script>
+      const modal = document.getElementById('imageModal');
+      const modalImage = document.getElementById('modalImage');
+
+      document.querySelectorAll('.property-main-image').forEach((img) => {
+        img.addEventListener('click', () => {
+          modalImage.src = img.src;
+          modal.classList.add('active');
+        });
+      });
+
+      modal.addEventListener('click', () => {
+        modal.classList.remove('active');
+        modalImage.src = '';
+      });
+    </script>
+  </body>
+</html>

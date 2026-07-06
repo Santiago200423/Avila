@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apartamento en Venta Los Ruices | Avila Real Estate</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+  </head>
+  <body class="detail-body">
+    <section class="detail-header">
+      <a class="back-link" href="index.html">← Volver a listados</a>
+      <h1>Apartamento en Venta Los Ruices</h1>
+    </section>
+
+    <main class="property-page reveal">
+      <section class="property-hero reveal">
+        <div class="swiper container-listing">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide card-item">
+              <div class="card-image-wrapper">
+                <img src="images/apartamento-venta-losruices.png" alt="Apartamento en Venta Los Ruices" class="property-main-image" />
+              </div>
+            </div>
+
+            <div class="swiper-slide card-item">
+              <div class="card-image-wrapper">
+                <img src="images/apartamento-venta-losruices1.png" alt="Local Comercial en Galerías" class="property-main-image" />
+              </div>
+            </div>
+
+            <div class="swiper-slide card-item">
+              <div class="card-image-wrapper">
+                <img src="images/apartamento-venta-losruices2.png" alt="Local Comercial en Galerías" class="property-main-image" />
+              </div>
+            </div>
+
+            <div class="swiper-slide card-item">
+              <div class="card-image-wrapper">
+                <img src="images/apartamento-venta-losruices3.png" alt="Local Comercial en Galerías" class="property-main-image" />
+              </div>
+            </div>
+
+            <div class="swiper-slide card-item">
+              <div class="card-image-wrapper">
+                <img src="images/apartamento-venta-losruices4.png" alt="Local Comercial en Galerías" class="property-main-image" />
+              </div>
+            </div>
+
+            <div class="swiper-slide card-item">
+              <div class="card-image-wrapper">
+                <img src="images/apartamento-venta-losruices5.png" alt="Local Comercial en Galerías" class="property-main-image" />
+              </div>
+            </div>
+
+            <div class="swiper-slide card-item">
+              <div class="card-image-wrapper">
+                <img src="images/apartamento-venta-losruices6.png" alt="Local Comercial en Galerías" class="property-main-image" />
+              </div>
+            </div>
+
+            <div class="swiper-slide card-item">
+              <div class="card-image-wrapper">
+                <img src="images/apartamento-venta-losruices7.png" alt="Local Comercial en Galerías" class="property-main-image" />
+              </div>
+            </div>
+
+            <div class="swiper-slide card-item">
+              <div class="card-image-wrapper">
+                <img src="images/apartamento-venta-losruices8.png" alt="Local Comercial en Galerías" class="property-main-image" />
+              </div>
+            </div>
+
+            <div class="swiper-slide card-item">
+              <div class="card-image-wrapper">
+                <img src="images/apartamento-venta-losruices9.png" alt="Local Comercial en Galerías" class="property-main-image" />
+              </div>
+            </div>
+
+
+
+          </div>
+
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+          <div class="slider-footer">
+            <span class="slider-badge">Venta residencial</span>
+          </div>
+        </div>
+
+        <div class="property-summary">
+          <span class="badge">Venta residencial</span>
+          <p class="property-info">Apartamento en piso intermedio, en buen estado de conservación, ubicado en una zona residencial con servicios cercanos y transporte.</p>
+          <div class="property-meta">
+            <p><strong>Ubicación:</strong> Los Ruices</p>
+            <p><strong>Condición:</strong> Buen estado</p>
+            <p><strong>Tipo:</strong> Apartamento</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="property-details reveal">
+        <h2>Detalles de la propiedad</h2>
+        <p>Este apartamento es ideal para familias o parejas que buscan una vivienda segura y bien ubicada. Tiene buena distribución y acceso fácil a transporte público, comercio y servicios.</p>
+        <ul class="property-features">
+          <li>Piso intermedio con buena ventilación</li>
+          <li>Estado de conservación adecuado</li>
+          <li>Cercano a escuelas, supermercados y transporte</li>
+          <li>Zona tranquila y residencial</li>
+          <li>Buena iluminación natural</li>
+        </ul>
+      </section>
+
+      <section class="property-contact reveal">
+        <h2>Contacto</h2>
+        <p>Contáctanos para obtener más detalles del precio, condiciones de venta y disponibilidad de este apartamento.</p>
+        <a class="btn" href="mailto:santiago.velasco.pereira@gmail.com">Contactar por correo</a>
+      </section>
+    </main>
+    <div class="image-modal" id="imageModal">
+      <img src="" alt="Zoomed image" id="modalImage" />
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="script/script.js"></script>
+
+
+    <script>
+      const modal = document.getElementById('imageModal');
+      const modalImage = document.getElementById('modalImage');
+
+      document.querySelectorAll('.property-main-image').forEach((img) => {
+        img.addEventListener('click', () => {
+          modalImage.src = img.src;
+          modal.classList.add('active');
+        });
+      });
+
+      modal.addEventListener('click', () => {
+        modal.classList.remove('active');
+        modalImage.src = '';
+      });
+    </script>
+  </body>
+</html>

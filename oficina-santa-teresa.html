@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oficina en Venta Parroquia Santa Teresa | Avila Real Estate</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+  </head>
+  <body class="detail-body">
+    <section class="detail-header">
+      <a class="back-link" href="index.html">← Volver a listados</a>
+      <h1>Oficina en Venta Parroquia Santa Teresa</h1>
+    </section>
+
+    <main class="property-page reveal">
+      <section class="property-hero reveal">
+        <div class="swiper container-listing">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide card-item">
+              <div class="card-image-wrapper">
+                <img src="images/oficina-venta-parroquia-santa-teresa.PNG" alt="Oficina en Venta Parroquia Santa Teresa" class="property-main-image" />
+              </div>
+            </div>
+
+            <div class="swiper-slide card-item">
+              <div class="card-image-wrapper">
+                <img src="images/oficina-venta-parroquia-santa-teresa1.PNG" alt="Local Comercial en Galerías" class="property-main-image" />
+              </div>
+            </div>
+
+            <div class="swiper-slide card-item">
+              <div class="card-image-wrapper">
+                <img src="images/oficina-venta-parroquia-santa-teresa2.PNG" alt="Local Comercial en Galerías" class="property-main-image" />
+              </div>
+            </div>
+
+            <div class="swiper-slide card-item">
+              <div class="card-image-wrapper">
+                <img src="images/oficina-venta-parroquia-santa-teresa3.PNG" alt="Local Comercial en Galerías" class="property-main-image" />
+              </div>
+            </div>
+
+            <div class="swiper-slide card-item">
+              <div class="card-image-wrapper">
+                <img src="images/oficina-venta-parroquia-santa-teresa4.PNG" alt="Local Comercial en Galerías" class="property-main-image" />
+              </div>
+            </div>
+
+            <div class="swiper-slide card-item">
+              <div class="card-image-wrapper">
+                <img src="images/oficina-venta-parroquia-santa-teresa5.PNG" alt="Local Comercial en Galerías" class="property-main-image" />
+              </div>
+            </div>
+
+            <div class="swiper-slide card-item">
+              <div class="card-image-wrapper">
+                <img src="images/oficina-venta-parroquia-santa-teresa6.PNG" alt="Local Comercial en Galerías" class="property-main-image" />
+              </div>
+            </div>
+
+            <div class="swiper-slide card-item">
+              <div class="card-image-wrapper">
+                <img src="images/oficina-venta-parroquia-santa-teresa7.PNG" alt="Local Comercial en Galerías" class="property-main-image" />
+              </div>
+            </div>
+
+            <div class="swiper-slide card-item">
+              <div class="card-image-wrapper">
+                <img src="images/oficina-venta-parroquia-santa-teresa8.PNG" alt="Local Comercial en Galerías" class="property-main-image" />
+              </div>
+            </div>
+
+            <div class="swiper-slide card-item">
+              <div class="card-image-wrapper">
+                <img src="images/oficina-venta-parroquia-santa-teresa9.PNG" alt="Local Comercial en Galerías" class="property-main-image" />
+              </div>
+            </div>
+
+
+            
+            </div>
+
+
+            <div class="swiper-slide card-item">
+              <div class="card-image-wrapper">
+                <img src="images/local-comercial-3.png" alt="Local Comercial en Galerías" class="property-main-image" />
+              </div>
+            </div>
+
+
+
+          </div>
+
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+          <div class="slider-footer">
+            <span class="slider-badge">Venta comercial</span>
+          </div>
+        </div>
+
+        <div class="property-summary">
+          <span class="badge">Venta comercial</span>
+          <p class="property-info">Oficina de 26 m² en edificio con acabados de primera, perfecta para profesionales o pequeñas empresas que buscan un espacio elegante y funcional.</p>
+          <div class="property-meta">
+            <p><strong>Ubicación:</strong> Parroquia Santa Teresa</p>
+            <p><strong>Tamaño:</strong> 26 m²</p>
+            <p><strong>Tipo:</strong> Oficina</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="property-details reveal">
+        <h2>Detalles de la propiedad</h2>
+        <p>Esta oficina ofrece un ambiente profesional con acabados de alta calidad. Es ideal para despachos, consultorios o equipos de trabajo que requieren una dirección comercial representativa.</p>
+        <ul class="property-features">
+          <li>26 m² en edificio seguro</li>
+          <li>Acabados modernos y bien conservados</li>
+          <li>Excelente ubicación para negocios</li>
+          <li>Espacio ideal para atención al cliente</li>
+          <li>Acceso a servicios y transporte</li>
+        </ul>
+      </section>
+
+      <section class="property-contact reveal">
+        <h2>Contacto</h2>
+        <p>Habla con nosotros para solicitar una cita y conocer los detalles de esta oficina.</p>
+        <a class="btn" href="mailto:santiago.velasco.pereira@gmail.com">Contactar por correo</a>
+      </section>
+    </main>
+
+    <div class="image-modal" id="imageModal">
+      <img src="" alt="Zoomed image" id="modalImage" />
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="script/script.js"></script>
+
+    <script>
+      const modal = document.getElementById('imageModal');
+      const modalImage = document.getElementById('modalImage');
+
+      document.querySelectorAll('.property-main-image').forEach((img) => {
+        img.addEventListener('click', () => {
+          modalImage.src = img.src;
+          modal.classList.add('active');
+        });
+      });
+
+      modal.addEventListener('click', () => {
+        modal.classList.remove('active');
+        modalImage.src = '';
+      });
+    </script>
+
+  </body>
+</html>
