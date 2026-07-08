@@ -10,6 +10,7 @@
 body {
   font-family: Arial, sans-serif;
   color: #333;
+  overflow-x: hidden;
 }
 
 .form-status {
@@ -63,28 +64,35 @@ header {
 }
 
 .hero{
-  background-image: url('../images/logo22.png'); /* Replace with your image path */
+  background-image: url('../images/logo22.png');
   background-size: cover;
   background-position: center;
-  min-height: 100vh;
+  min-height: 100svh;
+  min-height: 100dvh;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
+  padding: 1rem;
 }
 .overlay{
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
+  inset: 0;
   display: flex;
   flex-wrap: wrap;
-  background-color: rgba(0, 0, 0, 0.5);
+  background: linear-gradient(180deg, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.4) 100%);
   padding: 1rem 1.5rem;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.overlay nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.75rem 1rem;
 }
 a:hover {
       color:white;
@@ -95,9 +103,8 @@ a:hover {
 
   .navigation {
   color: white;
-  margin-left: 1rem;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: clamp(1rem, 2vw, 1.5rem);
   font-family: "Montserrat" sans-serif; 
   font-style: italic;
 }
@@ -105,8 +112,8 @@ a:hover {
 /* about*/
 #about {
   background-color: #899097;
- 
-   min-height: 700px
+  min-height: auto;
+  padding: clamp(3rem, 8vw, 5rem) 1.25rem;
 }
 .slider-wrapper {
   position: relative;
@@ -186,10 +193,11 @@ margin-bottom: 1.5rem;
 color: white;
 }
 .section-title{
- font-size: clamp(2.5rem, 3vw, 5.5rem);
+ font-size: clamp(1.8rem, 3vw, 3.5rem);
  font-family: "Montserrat" sans-serif; 
   font-style: italic;
   color:white;
+  line-height: 1.2;
 
 }
 .section-head{
@@ -233,7 +241,7 @@ color: white;
 
 #listings {
   background-color: #899097;
-  padding: 10rem 1rem 4rem;
+  padding: 6rem 1rem 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -535,7 +543,7 @@ color: white;
         gap: 2rem;
       }
       .section-title {
-        font-size: clamp(2rem, 4vw, 4rem);
+        font-size: clamp(1.8rem, 4vw, 2.8rem);
       }
     }
 
@@ -545,10 +553,18 @@ color: white;
       }
       .overlay {
         padding: 1rem;
+        align-items: flex-start;
+      }
+      .overlay nav {
+        width: 100%;
+        justify-content: flex-start;
       }
       .navigation {
-        font-size: 1.1rem;
-        margin-left: 0.75rem;
+        font-size: 1rem;
+      }
+      .hero {
+        justify-content: flex-start;
+        padding-top: 1rem;
       }
       .about-content {
         flex-direction: column;
@@ -572,15 +588,22 @@ color: white;
       #contact {
         padding: 3rem 1rem;
       }
+      .detail-body .card-image-wrapper {
+        height: clamp(240px, 44vh, 360px);
+      }
+      .property-summary,
+      .property-details,
+      .property-contact {
+        padding: 1.25rem;
+      }
     }
 
     @media (max-width: 480px) {
       .title {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
       }
       .navigation {
-        font-size: 1rem;
-        margin-left: 0.5rem;
+        font-size: 0.95rem;
       }
       .eyebrow {
         font-size: 0.9rem;
@@ -601,10 +624,28 @@ color: white;
       .form-row {
         flex-direction: column;
       }
+      .detail-header {
+        padding: 1.25rem 0.9rem;
+      }
+      .detail-body .property-page {
+        padding: 1rem 0.9rem 2rem;
+      }
+      .detail-body .card-image-wrapper {
+        height: 220px;
+      }
+      .property-contact .btn {
+        max-width: 100%;
+      }
     }
   
 section {
   padding: 2rem;
+}
+
+#about .about-text p[style*="font-size: 25px"],
+#about .about-text p[style*="font-size: 20px"] {
+  font-size: clamp(1rem, 2.4vw, 1.25rem) !important;
+  line-height: 1.6;
 }
 
 /* Detail page styling */
@@ -654,13 +695,15 @@ section {
 }
 
 .detail-body .card-image-wrapper {
-  height: 600px;
+  height: clamp(280px, 45vh, 600px);
 }
 
 .detail-body .property-main-image {
   width: 100%;
+  height: 100%;
   border-radius: 24px;
-  object-fit: cover;
+  object-fit: contain;
+  background: #f5f5f5;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
 }
 
