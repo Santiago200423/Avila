@@ -79,13 +79,15 @@ header {
 }
 .overlay{
   position: absolute;
-  inset: 0;
+  top: 0;
+  left: 0;
+  right: 0;
   display: flex;
   flex-wrap: wrap;
-  background: linear-gradient(180deg, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.4) 100%);
+  background-color: rgba(0, 0, 0, 0.5);
   padding: 1rem 1.5rem;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   gap: 1rem;
 }
 .overlay nav {
