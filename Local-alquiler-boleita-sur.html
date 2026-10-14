@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galpones en Venta o Alquiler Mariches | Avila Real Estate</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+  </head>
+  <body class="detail-body">
+    <section class="detail-header">
+      <a class="back-link" href="index.html">← Volver a listados</a>
+      <h1>Boleita Sur Alquiler</h1>
+    </section>
+
+    <main class="property-page reveal">
+      <section class="property-hero reveal">
+        <div class="swiper container-listing">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide card-item">
+              <div class="card-image-wrapper">
+                <img src="images/Local-alquiler-boleita-sur.PNG" alt="Galpones en Venta o Alquiler Mariches" class="property-main-image" />
+              </div>
+            </div>
+
+          </div>
+
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+          <div class="slider-footer">
+            <span class="slider-badge">GALPONES</span>
+          </div>
+        </div>
+
+        <div class="property-summary">
+          <span class="badge">Local Comercial</span>
+          <p class="property-info"></p>
+          <div class="property-meta">
+            <p><strong>Ubicación:</strong> Boleita Sur</p>
+            <p><strong>Condición:</strong> Buen estado</p>
+            <p><strong>Tipo:</strong> Local comercial</p>
+            <p><strong>Condiciones:</strong>  Condiciones de la negociación:  Un (Tres) meses adelantados, Tres (3) meses  de depósito, un (1) mes de comisión.</p>
+            <p><strong>Precio:</strong> Ref. 600. El inquilino paga todos los servicios y el condominio.  Información Milagros Pereira 0414-318.80.36</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="property-details reveal">
+        <h2>Detalles de la propiedad</h2>
+        
+        <ul class="property-features">
+            <li>Local comercial de 40 M2 Mas 30 M2 de mezzanina interna ubicado en la Planta Baja del Centro Seguros La Paz.</li>
+          <li>El lugar es frecuentado por público proveniente de las actividades públicas y privadas</li>
+          <li>El local cuenta con fachada de vidrio, oficina privada y un baño ubicado en la Planta Baja dónde hay un espacio centralizado con varios locales alrededor con usos diversos.</li>
+          <li>Aire Acondicionado</li>
+          <li>Ubicacion en la Planta Baja del Centro Comercial</li>
+          
+          
+       
+        </ul>
+      </section>
+
+      <section class="property-contact reveal">
+        <h2>Contacto</h2>
+        <p>Contáctanos para obtener más detalles del precio, condiciones de venta y disponibilidad de este local.</p>
+        <a class="btn" href="mailto:avila.realestate.ccs@gmail.com">Contactar por correo</a>
+      </section>
+    </main>
+    <div class="image-modal" id="imageModal">
+      <img src="" alt="Zoomed image" id="modalImage" />
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="script/script.js"></script>
+
+
+    <script>
+      const modal = document.getElementById('imageModal');
+      const modalImage = document.getElementById('modalImage');
+
+      document.querySelectorAll('.property-main-image').forEach((img) => {
+        img.addEventListener('click', () => {
+          modalImage.src = img.src;
+          modal.classList.add('active');
+        });
+      });
+
+      modal.addEventListener('click', () => {
+        modal.classList.remove('active');
+        modalImage.src = '';
+      });
+    </script>
+  </body>
+</html>

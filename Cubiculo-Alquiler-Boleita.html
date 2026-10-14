@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cubiculo-Alquiler-Boleita-Sur | Avila Real Estate</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+  </head>
+  <body class="detail-body">
+    <section class="detail-header">
+      <a class="back-link" href="index.html">← Volver a listados</a>
+      <h1>Boleita Sur Cubículo</h1>
+    </section>
+
+    <main class="property-page reveal">
+      <section class="property-hero reveal">
+        <div class="swiper container-listing">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide card-item">
+              <div class="card-image-wrapper">
+                <img src="images/Local-alquiler-boleita-sur.PNG" alt="Cubículo en Boleita Sur" class="property-main-image" />
+              </div>
+            </div>
+
+            <div class="swiper-slide card-item">
+              <div class="card-image-wrapper">
+                <img src="images/Cubiculo-alquiler2.PNG" alt="Cubículo en Boleita Sur" class="property-main-image" />
+              </div>
+            </div>
+
+            <div class="swiper-slide card-item">
+              <div class="card-image-wrapper">
+                <img src="images/Cubiculo-alquiler3.PNG" alt="Cubículo en Boleita Sur" class="property-main-image" />
+              </div>
+            </div>
+
+            <div class="swiper-slide card-item">
+              <div class="card-image-wrapper">
+                <img src="images/Cubiculo-alquiler4.PNG" alt="Cubículo en Boleita Sur" class="property-main-image" />
+              </div>
+            </div>
+
+            <div class="swiper-slide card-item">
+              <div class="card-image-wrapper">
+                <img src="images/Cubiculo-alquiler5.PNG" alt="Cubículo en Boleita Sur" class="property-main-image" />
+              </div>
+            </div>
+
+            <div class="swiper-slide card-item">
+              <div class="card-image-wrapper">
+                <img src="images/Cubiculo-alquiler6.PNG" alt="Cubículo en Boleita Sur" class="property-main-image" />
+              </div>
+            </div>
+
+            <div class="swiper-slide card-item">
+              <div class="card-image-wrapper">
+                <img src="images/Cubiculo-alquiler7.PNG" alt="Cubículo en Boleita Sur" class="property-main-image" />
+              </div>
+            </div>
+
+            <div class="swiper-slide card-item">
+              <div class="card-image-wrapper">
+                <img src="images/Cubiculo-alquiler8.PNG" alt="Cubículo en Boleita Sur" class="property-main-image" />
+              </div>
+            </div>
+
+            <div class="swiper-slide card-item">
+              <div class="card-image-wrapper">
+                <img src="images/Cubiculo-alquiler9.PNG" alt="Cubículo en Boleita Sur" class="property-main-image" />
+              </div>
+            </div>
+
+            
+
+          </div>
+
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+          <div class="slider-footer">
+            <span class="slider-badge">Alquiler Cubiculos</span>
+          </div>
+        </div>
+
+        <div class="property-summary">
+          <span class="badge">Alquiler Cubiculos</span>
+          <p class="property-info">Cubículo en alquiler en Boleita Sur.</p>
+          <div class="property-meta">
+            <p><strong>Ubicación:</strong> Boleita Sur</p>
+            <p><strong>Condición:</strong> Buen estado</p>
+            <p><strong>Tipo:</strong> Cubículo</p>
+            <p><strong>Condiciones de la negociación:</strong> Condiciones de la negociación: Un (1) mes adelantado, Dos (2) meses  de depósito, un (1) mes de comisión. Ref. 250. Información MIlagros Pereira 0414-318.80.36</p>
+            
+          </div>
+        </div>
+      </section>
+
+      <section class="property-details reveal">
+        <h2>Detalles de la propiedad</h2>
+        
+        <ul class="property-features">
+            <li>Cubículo de 50 m2 con capacidad para seis (6) personas, con una recepción, Oficina ejecutiva privada con vista hacia el área sur. Oficina privada si vista.</li>
+          <li>Area de trabajo con capacidad para 4 puestos de trabajo.</li>
+          <li>Internet/Wifi</li>
+          <li>Aire Acondicionado</li>
+          <li>Servicio de recepción de llamadas CANTV a traves de la recepcionista</li>
+          <li>Pisos de alfombra, tabiques de drywall, totalmente amoblada.</li>
+          <li>Centro Seguros La Paz, se encuentra en la Avenida Francisco de Miranda lo que le permite una gran facilidad para su acceso y entre las dos estaciones del Metro de La California y Los Cortijos.</li>
+          <li>Facilcidad de acceso peatonal y vehicularmente, por medio de transporte público superficial y subterráneo.</li>
+          <li>El edificio cuenta con estacionamiento público, servicios de clínica, centros comerciales cercanos, automercados, comercios en general.</li>
+          
+          
+       
+        </ul>
+      </section>
+
+      <section class="property-contact reveal">
+        <h2>Contacto</h2>
+        <p>Contáctanos para obtener más detalles del precio, condiciones de venta y disponibilidad de este local.</p>
+        <a class="btn" href="mailto:avila.realestate.ccs@gmail.com">Contactar por correo</a>
+      </section>
+    </main>
+    <div class="image-modal" id="imageModal">
+      <img src="" alt="Zoomed image" id="modalImage" />
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="script/script.js"></script>
+
+
+    <script>
+      const modal = document.getElementById('imageModal');
+      const modalImage = document.getElementById('modalImage');
+
+      document.querySelectorAll('.property-main-image').forEach((img) => {
+        img.addEventListener('click', () => {
+          modalImage.src = img.src;
+          modal.classList.add('active');
+        });
+      });
+
+      modal.addEventListener('click', () => {
+        modal.classList.remove('active');
+        modalImage.src = '';
+      });
+    </script>
+  </body>
+</html>
